@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="calculator">
+        <div class="display">
+            <input disabled id="screen" type="text">
+        </div>
+        <ul>
+            <li onclick="num('C')" class="special">C</li>
+            <li onclick="num('/')" class="special">/</li>
+            <li onclick="num('*')" class="special">*</li>
+            <li onclick="num('X')" class="special">X</li>
+        </ul>
+        <ul>
+            <li onclick="num('7')">7</li>
+            <li onclick="num('8')">8</li>
+            <li onclick="num('9')">9</li>
+            <li onclick="num('-')" class="special">-</li>
+        </ul>
+        <ul>
+            <li onclick="num('4')">4</li>
+            <li onclick="num('5')">5</li>
+            <li onclick="num('6')">6</li>
+            <li onclick="num('+')" class="special">+</li>
+        </ul>
+        <div class="equal">
+            <div class="equal1">
+                <ul>
+                    <li onclick="num('1')">1</li>
+                    <li onclick="num('2')">2</li>
+                    <li onclick="num('3')">3</li>
+                </ul>
+                <ul>
+                    <li onclick="num('%')">%</li>
+                    <li onclick="num('0')">0</li>
+                    <li onclick="num('.')">.</li>
+                </ul>
+            </div>
+            <ul class="equal2"><li onclick="num('=')" class="equalToo">=</li></ul>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
